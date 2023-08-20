@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { HomeLayout, Home, Officers } from './pages';
+import { HomeLayout, Home, Officers, Notables } from './pages';
 import './App.css'
 
 const router = createBrowserRouter([
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
         path: 'officers',
         element: <Officers />
       },
+      {
+        path: 'notables',
+        element: <Notables />
+      }
     ],
   },
 ]);
